@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Alimento de perro",
+        "image": "imageUrl",
+        "description": "Paquete por 50kg con los mejores nutrientes....",
+        "price": 20000
+    },
+    {
+        "name": "Collar para Perro",
+        "image": "imageUrl",
+        "description": "Personaliza como quieras el collar para tu amigo :)",
+        "price": 15000
+    }
+]
