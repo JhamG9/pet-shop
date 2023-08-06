@@ -6,11 +6,12 @@ import { useDispatch } from "react-redux";
 import { updatedCart } from '../../features/product/productsSlice';
 
 interface PropsCounter {
-    product: Product
+    product: Product;
+    inDetail?: boolean;
 }
 
-export const Counter = ({ product }: PropsCounter) => {
-    const [count, setCount] = useState(0);
+export const Counter = ({ product, inDetail = false }: PropsCounter) => {
+    const [count, setCount] = useState(product.quantity);
     const [tempAlert, setTempAlert] = useState<any>();
     const dispatch = useDispatch();
 
@@ -32,12 +33,12 @@ export const Counter = ({ product }: PropsCounter) => {
 
     const increase = () => {
         setCount(count + 1);
-        updatedQuantityInCart(count + 1 );
+        updatedQuantityInCart(count + 1);
         delayedAlertAddProduct();
     }
 
-    const updatedQuantityInCart = (quantity:number) =>{
-        dispatch(updatedCart({ ...product, quantity}));
+    const updatedQuantityInCart = (quantity: number) => {
+        dispatch(updatedCart({ ...product, quantity }));
 
     }
 
@@ -45,11 +46,15 @@ export const Counter = ({ product }: PropsCounter) => {
         <>
             {
                 count > 0 ? (
-                    <div className="counter">
-                        <button className="btn btn-success counter-button" onClick={decrease}>-</button>
-                        <span className="counter-value">{count}</span>
-                        <button className="btn btn-success counter-button" onClick={increase}>+</button>
-                    </div>
+                    <>
+                        {inDetail && <p className='quantity-product'>Cantidad:</p>}
+                        <div className="counter">
+                            <button className="btn btn-success counter-button" onClick={decrease}>-</button>
+                            <span className="counter-value">{count}</span>
+                            <button className="btn btn-success counter-button" onClick={increase}>+</button>
+                        </div>
+                    </>
+
                 ) : (
                     <button onClick={increase} className="btn btn-primary btn-add-cart">Añadir al carrito</button>
                 )

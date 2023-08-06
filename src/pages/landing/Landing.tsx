@@ -3,7 +3,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { CartList } from '../cart/CartList';
-import { ProductDetail } from '../product/ProductDetail';
+import { ProductDetail } from '../product/productDetail/ProductDetail';
 import { ProductList } from '../product/ProductList';
 
 

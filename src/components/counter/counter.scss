@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .counter-button {
@@ -22,4 +21,11 @@
 
 .btn-add-cart {
   width: 100%;
+}
+
+.quantity-product{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
