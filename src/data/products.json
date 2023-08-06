@@ -4,7 +4,9 @@
         "name": "Alimento Pro Plan OptiDerma",
         "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_745128-MLA48980955463_012022-F.webp",
         "description": "Paquete por 50kg con los mejores nutrientes para tu perro",
-        "price": 375506
+        "price": 375506,
+        "quantity": 0
+
     },
     {
         "id": "2",
