@@ -1,12 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Product } from "../../interfaces/ProductInterface";
-
-const initialState : Product[] = [
-]
+import initialProducts from '../../data/products.json';
 
 export const shoppingCartSlice = createSlice({
     name: 'cart',
-    initialState,
+    initialState: initialProducts,
     reducers: {
         addProduct: (state, action) => {
             state.push(action.payload);

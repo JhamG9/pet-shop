@@ -1,0 +1,61 @@
+@mixin string-truncated {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: pre-wrap;
+}
+
+.card {
+    box-shadow: 1px 1px 11px #c5c5c5;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 420px;
+
+    &__img {
+        height: 224px;
+        border-radius: 4px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &:hover {
+        transition: .3s;
+        box-shadow: 1px 1px 15px darken(#c5c5c5, 30);
+    }
+
+
+}
+
+.card-body {
+    &__description {
+        -webkit-line-clamp: 2;
+        @include string-truncated;
+        font-size: 15px;
+    }
+
+    &__title {
+        -webkit-line-clamp: 1;
+        @include string-truncated;
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 15px;
+        width: 80%;
+        left: 10%;
+    }
+}
+
+.cnt-card {
+    position: relative;
+}

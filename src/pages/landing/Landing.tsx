@@ -1,15 +1,13 @@
-import { CartList } from '../cart/CartList';
-import { ProductDetail } from '../product/ProductDetail';
-import { ProductList } from '../product/ProductList';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { CartList } from '../cart/CartList';
+import { ProductDetail } from '../product/ProductDetail';
+import { ProductList } from '../product/ProductList';
 
 
 export const Landing = () => {
-
   const router = createBrowserRouter([
     {
       path: "/",
@@ -24,15 +22,12 @@ export const Landing = () => {
       element: <CartList />,
     },
   ]);
-  
-
 
   return (
     <div className="content">
       <header>
         Header
       </header>
-
       <div className="container">
         <RouterProvider router={router} />
       </div>
