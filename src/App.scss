@@ -1,5 +1,9 @@
+$myColor: red;
+
 .App {
   text-align: center;
+  background-color: $myColor;
+  color: red;
 }
 
 .App-logo {

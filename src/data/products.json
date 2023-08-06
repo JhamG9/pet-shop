@@ -1,14 +1,38 @@
 [
     {
-        "name": "Alimento de perro",
-        "image": "imageUrl",
-        "description": "Paquete por 50kg con los mejores nutrientes....",
-        "price": 20000
+        "name": "Alimento Pro Plan OptiDerma",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_745128-MLA48980955463_012022-F.webp",
+        "description": "Paquete por 50kg con los mejores nutrientes para tu perro",
+        "price": 375506
     },
     {
-        "name": "Collar para Perro",
-        "image": "imageUrl",
-        "description": "Personaliza como quieras el collar para tu amigo :)",
+        "name": "Forro Protector Masctora",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_847406-MCO70393278355_072023-F.webp",
+        "description": "Tapete tv para auto; protector de cojinería para perros o gatos pet seat cover-, para mantener tu auto libre de pelos y caspa de tus mascotas",
         "price": 15000
+    },
+    {
+        "name": "Guante Quita Pelo Cepillo",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_834377-MLU70338318632_072023-F.webp",
+        "description": "El Guante Quita Pelo Cepillo para Peinar Perros y Gatos de la marca True Touch es el aliado perfecto para el cuidado de tu mascota",
+        "price": 15000
+    },
+    {
+        "name": "Correa Larga De 10 Mt Para Mascota",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_741566-MCO54129856647_032023-F.webp",
+        "description": "Correa para mascota larga con 10 Mt de largo y de color Negro",
+        "price": 19900
+    },
+    {
+        "name": "Omega 3 Para Mascotas Epa Dha X 50 Capsulas X 2 Tarros",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_839742-MLU54963333818_042023-F.webp",
+        "description": "Tu mascota siempre saludable. Ellos son parte de la familia y nos regalan su compañía y su cariño. Para que se mantengan sanos y fuertes",
+        "price": 48500
+    },
+    {
+        "name": "Pechera Chaleco Arnés Mascota Perro Raza Mediana Y Grande",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_956291-MCO49697693406_042022-F.webp",
+        "description": "Pechera chaleco Arnés Mascota Perro Raza Mediana y Grande",
+        "price": 35900
     }
 ]
