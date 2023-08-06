@@ -3,7 +3,22 @@
 @import "../node_modules/alertifyjs//build/css/themes/default.min.css";
 
 @import url('./styles/components/components.scss');
+@import url('./styles/colors/_colors.scss');
 
 p {
   margin: 0
+}
+
+html, body, #root{
+  width: 100%;
+  height: 100%;
+}
+
+.alertify-notifier.ajs-right .ajs-message.ajs-visible {
+  top: 48px;
+
+  @media screen and (max-width: 320px) {
+    font-size: 15px;
+    right: 250px;
+  }
 }

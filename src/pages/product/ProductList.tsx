@@ -6,7 +6,8 @@ export const ProductList = () => {
   const products = useSelector((state: StoreType) => state.products);
 
   return (
-    <div className="row">
+    <div className="row pt-4">
+      <h1>Nuestros productos</h1>
       {
         products.map(product => (
           <ProductCard product={product} key={product.id} />

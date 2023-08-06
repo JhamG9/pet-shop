@@ -1,0 +1,10 @@
+.header-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+
+    &__total {
+        font-size: 20px;
+    }
+}

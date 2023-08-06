@@ -1,40 +1,19 @@
 import {
-  createBrowserRouter,
-  RouterProvider,
+  Outlet,
 } from "react-router-dom";
-import { CartList } from '../cart/CartList';
-import { ProductDetail } from '../product/productDetail/ProductDetail';
-import { ProductList } from '../product/ProductList';
+import { Header } from "../../components/header/Header";
+import { Footer } from "../../components/footer/Footer";
+import './landing.scss';
 
 
 export const Landing = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <ProductList />,
-    },
-    {
-      path: "product/:id",
-      element: <ProductDetail />,
-    },
-    {
-      path: "/cart",
-      element: <CartList />,
-    },
-  ]);
-
   return (
-    <div className="content">
-      <header>
-        Header
-      </header>
-      <div className="container">
-        <RouterProvider router={router} />
+    <>
+      <Header />
+      <div  className="container content-landing">
+        <Outlet></Outlet>
       </div>
-
-      <footer>
-        Footer
-      </footer>
-    </div>
+      <Footer />
+    </>
   )
 }

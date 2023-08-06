@@ -1,0 +1,32 @@
+.icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-white);
+
+    &__img {
+        max-width: 30px;
+    }
+
+    &__counter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: -15px;
+        margin-right: -3px;
+        height: 25px;
+        width: 25px;
+        background-color: var(--color-brandeis-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--color-white);
+        font-size: 15px;
+    }
+}
