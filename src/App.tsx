@@ -11,7 +11,7 @@ function App() {
     {
       path: "/",
       element: <Landing />,
-      children:[
+      children: [
         {
           path: '',
           element: <ProductList />
@@ -25,13 +25,12 @@ function App() {
           element: <CartList />,
         },
       ]
-    },
-    
+    }
   ]);
 
   return (
     <>
-       <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
   )
 }
