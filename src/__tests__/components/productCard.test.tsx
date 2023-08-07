@@ -34,7 +34,7 @@ describe('ProductCard Component', () => {
 
         const deleteButton = getByAltText('delete');
         fireEvent.click(deleteButton);
-        const actions = store.getActions(); // Obtiene las acciones despachadas
+        const actions = store.getActions();
         expect(actions).toEqual([{
             payload: {
                 description: "Product Description",
@@ -46,7 +46,6 @@ describe('ProductCard Component', () => {
             },
             type: "products/updatedCart",
         }
-            // Define aquí la acción esperada, por ejemplo, la acción de updatedCart con quantity: 0
         ]);
     });
 });

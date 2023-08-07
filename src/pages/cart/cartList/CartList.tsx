@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { Product } from "../../../interfaces/ProductInterface";
 import { ProductCard } from "../../../components/ProductCard";
-import { useSelector } from "react-redux";
 import { StoreType } from "../../../types/StoreTypes";
-import { useNavigate } from "react-router-dom";
-import './cartList.scss';
 import { Currency } from "../../../components/Currency";
+import './cartList.scss';
 
 export const CartList = () => {
   const products = useSelector((state: StoreType) => state.products);

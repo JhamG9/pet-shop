@@ -1,9 +1,9 @@
-import { CartIcon } from '../cartIcon/CartIcon';
-import './header.scss';
-import { useSelector } from 'react-redux';
-import { StoreType } from '../../types/StoreTypes';
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { CartIcon } from '../cartIcon/CartIcon';
+import { StoreType } from '../../types/StoreTypes';
+import './header.scss';
 
 export const Header = () => {
   const products = useSelector((state: StoreType) => state.products);

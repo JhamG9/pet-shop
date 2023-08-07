@@ -1,9 +1,10 @@
-import './counter.scss';
-import { Product } from "../../interfaces/ProductInterface";
-import * as alertify from 'alertifyjs';
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import * as alertify from 'alertifyjs';
+import { Product } from "../../interfaces/ProductInterface";
 import { updatedCart } from '../../features/product/productsSlice';
+import './counter.scss';
+
 
 interface PropsCounter {
     product: Product;

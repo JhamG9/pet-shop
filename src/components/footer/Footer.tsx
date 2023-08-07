@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import './footer.scss';
 import iconFacebook from '../../assets/icons/facebook.png';
 import iconInstagram from '../../assets/icons/instagram.png';
 import iconTwitter from '../../assets/icons/twitter.png';
+import './footer.scss';
 
 export const Footer = () => {
   return (

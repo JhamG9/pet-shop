@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Product } from "../interfaces/ProductInterface"
+import { useDispatch } from "react-redux";
 import { Currency } from "./Currency";
 import { Counter } from "./counter/Counter";
-import iconTrash from "../assets/icons/delete.png";
-import { useDispatch } from "react-redux";
 import { updatedCart } from "../features/product/productsSlice";
+import { Product } from "../interfaces/ProductInterface"
+import iconTrash from "../assets/icons/delete.png";
+
 
 interface PropsCard {
     product: Product;

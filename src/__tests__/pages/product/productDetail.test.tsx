@@ -18,10 +18,9 @@ const initialState = {
 };
 const store = mockStore(initialState);
 
-// Simula useParams para devolver un valor específico
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
-  useParams: () => ({ id: "1" }), // Cambia esto según el ID que necesites para tus pruebas
+  useParams: () => ({ id: "1" })
 }));
 
 describe("ProductDetail", () => {

@@ -11,18 +11,14 @@ export const ProductDetail = () => {
   const [product, setproduct] = useState<Product>();
   let { id } = useParams();
   const products = useSelector((state: StoreType) => state.products);
-  
+
   useEffect(() => {
     setproduct(products.find((product) => product.id === id));
-
-    console.log(id);
   }, [products]);
-
-
 
   return (
     <div className="row content-detail"><span></span>
-      
+
       {product && (
         <>
           <div className="col-12 col-md-12 col-lg-7 content-img">
