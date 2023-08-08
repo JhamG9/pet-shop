@@ -20,7 +20,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="col-md-6">
-            <ul className="list-inline text-md-right mb-0">
+            {/* <ul className="list-inline text-md-right mb-0">
               <li className="list-inline-item social-icon"><a href="https://facebook.com/pet-shop" target="_blank" rel="facebook">
                 <img className='social-icon__img' src={iconFacebook} alt='facebook' />
               </a></li>
@@ -30,7 +30,7 @@ export const Footer = () => {
               <li className="list-inline-item social-icon"><a href="https://instagram.com/pet-shop" target="_blank" rel="noopener noreferrer">
                 <img className='social-icon__img' src={iconInstagram} alt='instagram' />
               </a></li>
-            </ul>
+            </ul> */}
           </div>
           <div className='col-md-12 rights-reserved'>
             <p className="rights-reserved__text">&copy; {new Date().getFullYear()} Pet Shop. Todos los derechos reservados.</p>
